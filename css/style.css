@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,8 @@
     right: 15vh;
     border: 2px solid black;
     padding: 20px 40px;
+    width: 360px;
+    height: 100px;
     background-color: white;
     font-size: 40px;
     text-transform: uppercase;
@@ -33,7 +35,45 @@
     /* animation: shakes 5s linear infinite; */
 }
 
-button span{
+.button3 {
+    position: absolute;
+    top: 40vh;
+    right: 15vh;
+    border: 2px solid black;
+    width: 360px;
+    height: 100px;
+    background-color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    /* animation: shakes 5s linear infinite; */
+}
+
+.button3 span{
+    display: block;
+    line-height: 100px;
+    position: relative; 
+    top:0;
+    left: 0;
+    transition:  .2s linear;
+}
+
+.button3 span:nth-child(2) {
+    top: -100px;
+    left: 360px;
+}
+
+.button3:hover span:nth-child(1) {
+    left: -360px;
+}
+
+.button3:hover span:nth-child(2) {
+    left: 0
+}
+
+.button2 span {
     display: block;
     line-height: 100px;
     position: relative;
@@ -42,7 +82,7 @@ button span{
     /* animation: shakes 5s linear infinite; */
 }
 
-button:hover span {
+.button2:hover span {
     top: -100px;
 }
 
